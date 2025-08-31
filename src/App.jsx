@@ -41,7 +41,7 @@ function App() {
 
   return (
     <>
-      <div className="bg-[#faf0ca] h-full py-5 flex gap-5 justify-center items-center text-[#0d3b66]">
+      <div className="bg-[#faf0ca] h-full py-5 flex flex-col lg:flex-row gap-5 justify-center items-center text-[#0d3b66]">
         <input
           type="text"
           name=""
@@ -72,7 +72,7 @@ function App() {
           Update
         </button>
       </div>
-      <div className="h-screen w-screen flex flex-wrap justify-center items-center gap-5 bg-[#faf0ca]">
+      <div className="h-screen w-screen flex flex-col lg:flex-wrap lg:flex-row justify-center items-center gap-5 bg-[#faf0ca]">
         {Object.keys(moodState).map((person, id) => (
           <MoodCard key={id} person={person} mood={moodState[person]} />
         ))}
